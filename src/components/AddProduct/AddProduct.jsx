@@ -28,7 +28,7 @@ const AddProduct = () => {
     let formData = new FormData();
     formData.append("product", image);
     console.log(import.meta.env.VITE_APP_BASE_URL);
-    await fetch(`http://localhost:3000/upload`, {
+    await fetch(`https://${import.meta.env.VITE_APP_BASE_URL}/upload`, {
       method: "POST",
       headers: {
         Accept: "application/json",
